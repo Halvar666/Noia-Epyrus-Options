@@ -1,0 +1,81 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Noia Fox 2.0.8 Blue scheme adapted to Epyrus 2.2.1.
+ * Do not rely on :-moz-lwtheme: the complete Noia Epyrus theme can still
+ * expose lightweight-theme state on some windows. */
+#messengerWindow,
+#tabs-toolbar,
+#mail-toolbar-menubar2,
+#mail-bar3,
+.mail-toolbox,
+.contentTabToolbox,
+#quick-filter-bar-main-bar,
+#quick-filter-bar-tab-bar,
+#quick-filter-bar-filter-text-bar,
+#msgcomposeWindow,
+#composeToolbar2,
+#compose-toolbar-menubar2,
+#MsgHeadersToolbar,
+#FormatToolbox,
+#abContactsPanel,
+#addrbook-toolbar-menubar2,
+#ab-bar2,
+#ab-toolbox,
+#attachmentView,
+#calendar-toolbox,
+#task-toolbox,
+#chat-view-toolbox {
+  -moz-appearance: none !important;
+  background-color: #D2E1F6 !important;
+}
+
+/* The original Blue option combined blue.css + blue2.css + tbblue.css. */
+.mail-toolbox,
+.contentTabToolbox,
+#mail-toolbar-menubar2,
+#mail-bar3,
+#quick-filter-bar-main-bar,
+#quick-filter-bar-tab-bar,
+#quick-filter-bar-filter-text-bar,
+#msgcomposeWindow,
+#composeToolbar2,
+#compose-toolbar-menubar2,
+#MsgHeadersToolbar,
+#FormatToolbox,
+#abContactsPanel,
+#addrbook-toolbar-menubar2,
+#ab-bar2,
+#ab-toolbox,
+#calendar-toolbox,
+#task-toolbox,
+#chat-view-toolbox {
+  background-image: linear-gradient(rgba(255,255,255,.52), rgba(255,255,255,.10) 26px) !important;
+  background-repeat: repeat-x !important;
+}
+
+#tabs-toolbar {
+  background-image: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.10) 25px) !important;
+}
+
+#expandedHeaderView,
+#CompactHeader_collapsedHeaderView,
+#msgHeaderView {
+  background: linear-gradient(145deg, #D2E1F6, #EFF2FA 40%, #D2E1F6 70%) !important;
+}
+
+/* Keep the blue scheme visible in common secondary panes without recolouring
+ * the actual message/document content. */
+#folderPaneBox,
+#threadPaneBox,
+#today-pane-panel,
+#calendar-task-box {
+  border-color: #9fb7d5 !important;
+}
+
+@-moz-document url("about:addons") {
+  #header { background: #D2E1F6 !important; }
+  #categories { background: #D3E0F1 !important; }
+  #view-port, #addon-list, #search-list, #updates-list {
+    background: linear-gradient(145deg, #D2E1F6, #EFF2FA 40%, #D2E1F6 70%) !important;
+  }
+}

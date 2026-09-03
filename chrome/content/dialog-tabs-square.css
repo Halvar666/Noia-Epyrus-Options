@@ -1,0 +1,5 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+tabbox > tabs > tab,
+tabs > tab {
+  border-radius: 0 !important;
+}

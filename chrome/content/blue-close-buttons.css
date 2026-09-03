@@ -1,0 +1,29 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+.tab-close-button,
+.tabs-closebutton,
+#find-closebutton,
+.findbar-closebutton,
+.messageCloseButton,
+.ab-closebutton,
+.closeConversationButton {
+  list-style-image: url("chrome://noiaepyrusoptions/skin/blue-close.png") !important;
+  -moz-image-region: rect(0, 16px, 16px, 0) !important;
+}
+.tab-close-button:hover,
+.tabs-closebutton:hover,
+#find-closebutton:hover,
+.findbar-closebutton:hover,
+.messageCloseButton:hover,
+.ab-closebutton:hover,
+.closeConversationButton:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
+}
+.tab-close-button:hover:active,
+.tabs-closebutton:hover:active,
+#find-closebutton:hover:active,
+.findbar-closebutton:hover:active,
+.messageCloseButton:hover:active,
+.ab-closebutton:hover:active,
+.closeConversationButton:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px) !important;
+}

@@ -1,0 +1,20 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Noia Fox 2.0.6 background.css, made explicit for Epyrus primary toolbars. */
+#mail-bar3 toolbarbutton:not([disabled="true"]):not([checked="true"]):hover,
+#mail-bar3 toolbarbutton:not([disabled="true"]):not([checked="true"])[buttonover="true"],
+#composeToolbar2 toolbarbutton:not([disabled="true"]):not([checked="true"]):hover,
+#ab-bar2 toolbarbutton:not([disabled="true"]):not([checked="true"]):hover,
+#calendar-toolbox toolbarbutton:not([disabled="true"]):not([checked="true"]):hover,
+#task-toolbox toolbarbutton:not([disabled="true"]):not([checked="true"]):hover,
+#chat-view-toolbox toolbarbutton:not([disabled="true"]):not([checked="true"]):hover {
+  -moz-appearance: none !important;
+  color: #000 !important;
+  background-color: #fff !important;
+  background-image: url("chrome://global/skin/button/hover.png") !important;
+  background-repeat: repeat-x !important;
+  background-position: top left !important;
+  background-size: auto 100% !important;
+  border: 1px solid #808080 !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 1px transparent, 0 0 1px #000 inset !important;
+}

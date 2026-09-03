@@ -1,0 +1,25 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.options-root {
+  min-width: 520px;
+  padding: 10px;
+}
+
+#themeStatus {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.section-label {
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+radiogroup[orient="horizontal"] > radio {
+  margin-right: 12px;
+}
+
+.theme-active { color: darkgreen; }
+.theme-inactive { color: #a05000; }
+.credits { font-size: 90%; opacity: .8; }

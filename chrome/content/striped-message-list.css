@@ -1,0 +1,7 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Original Noia Fox mail-row treatment, restored as an option. */
+#threadTree treechildren::-moz-tree-row(odd) {
+  background-image: url("chrome://messenger/skin/icons/row.png") !important;
+  background-position: bottom !important;
+  background-repeat: repeat-x !important;
+}

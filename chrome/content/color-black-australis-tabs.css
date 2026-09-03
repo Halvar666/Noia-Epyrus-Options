@@ -1,0 +1,28 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Black scheme + default curved Noia/Australis tabs. */
+#messengerWindow #tabs-toolbar .tabmail-tab:not([selected="true"]):not([selected]):not(:hover)
+  > .tab-stack > .tab-content,
+#messengerWindow #tabs-toolbar .tabmail-tab:not([selected="true"]):not([selected]):not(:hover)
+  > .tab-stack > .tab-content > .tab-text,
+#messengerWindow #tabs-toolbar .tabmail-tab[selected="false"]:not(:hover)
+  > .tab-stack > .tab-content,
+#messengerWindow #tabs-toolbar .tabmail-tab[selected="false"]:not(:hover)
+  > .tab-stack > .tab-content > .tab-text {
+  color: #e4e4e4 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-tab[selected="true"]
+  > .tab-stack > .tab-content,
+#messengerWindow #tabs-toolbar .tabmail-tab[selected="true"]
+  > .tab-stack > .tab-content > .tab-text,
+#messengerWindow #tabs-toolbar .tabmail-tab:hover
+  > .tab-stack > .tab-content,
+#messengerWindow #tabs-toolbar .tabmail-tab:hover
+  > .tab-stack > .tab-content > .tab-text {
+  color: #111 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}

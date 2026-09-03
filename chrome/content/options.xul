@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://noiaepyrusoptions/skin/options.css" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://noiaepyrusoptions/locale/options.dtd">
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            id="noiaepyrus-options-window"
+            title="&window.title;"
+            buttons="accept"
+            buttonlabelaccept="&close.label;"
+            onload="NoiaEpyrusOptionsDialog.init();">
+  <script type="application/javascript" src="chrome://noiaepyrusoptions/content/runtime.js"/>
+  <script type="application/javascript" src="chrome://noiaepyrusoptions/content/options.js"/>
+  <prefpane id="mainPane">
+    <vbox class="options-root">
+      <description id="themeStatus"/>
+
+      <groupbox>
+        <caption label="&colors.caption;"/>
+        <radiogroup id="colorScheme" orient="horizontal"
+                    oncommand="NoiaEpyrusOptionsDialog.choose('colorScheme', this.value);">
+          <radio label="&colors.grey;" value="grey"/>
+          <radio label="&colors.blue;" value="blue"/>
+          <radio label="&colors.black;" value="black"/>
+        </radiogroup>
+      </groupbox>
+
+      <groupbox>
+        <caption label="&tabs.caption;"/>
+        <label value="&mailTabs.label;" class="section-label"/>
+        <radiogroup id="tabStyle" orient="vertical"
+                    oncommand="NoiaEpyrusOptionsDialog.choose('tabStyle', this.value);">
+          <radio label="&tabs.australis;" value="australis"/>
+          <radio label="&tabs.square;" value="classic-square"/>
+          <radio label="&tabs.rounded;" value="classic-rounded"/>
+        </radiogroup>
+        <separator class="thin"/>
+        <label value="&dialogTabs.label;" class="section-label"/>
+        <radiogroup id="dialogTabStyle" orient="horizontal"
+                    oncommand="NoiaEpyrusOptionsDialog.choose('dialogTabStyle', this.value);">
+          <radio label="&dialogTabs.standard;" value="standard"/>
+          <radio label="&dialogTabs.square;" value="square"/>
+          <radio label="&dialogTabs.rounded;" value="rounded"/>
+        </radiogroup>
+      </groupbox>
+
+      <groupbox>
+        <caption label="&controls.caption;"/>
+        <checkbox id="roundedButtons" label="&roundedButtons.label;"
+                  oncommand="NoiaEpyrusOptionsDialog.toggle('roundedButtons', this.checked);"/>
+        <checkbox id="blueCloseButtons" label="&blueCloseButtons.label;"
+                  oncommand="NoiaEpyrusOptionsDialog.toggle('blueCloseButtons', this.checked);"/>
+      </groupbox>
+
+      <groupbox>
+        <caption label="&mailList.caption;"/>
+        <checkbox id="stripedRows" label="&stripedRows.label;"
+                  tooltiptext="&stripedRows.tooltip;"
+                  oncommand="NoiaEpyrusOptionsDialog.toggle('stripedRows', this.checked);"/>
+      </groupbox>
+
+      <groupbox>
+        <caption label="&toolbars.caption;"/>
+        <checkbox id="noToolbarBorders" label="&noToolbarBorders.label;"
+                  oncommand="NoiaEpyrusOptionsDialog.toggle('noToolbarBorders', this.checked);"/>
+        <checkbox id="toolbarHoverBackground" label="&toolbarHoverBackground.label;"
+                  oncommand="NoiaEpyrusOptionsDialog.toggle('toolbarHoverBackground', this.checked);"/>
+        <checkbox id="plainToolbars" label="&plainToolbars.label;"
+                  oncommand="NoiaEpyrusOptionsDialog.toggle('plainToolbars', this.checked);"/>
+      </groupbox>
+
+      <separator class="thin"/>
+      <button label="&reset.label;" oncommand="NoiaEpyrusOptionsDialog.reset();"/>
+
+      <separator class="thin"/>
+      <description class="credits">&credits;</description>
+    </vbox>
+  </prefpane>
+</prefwindow>

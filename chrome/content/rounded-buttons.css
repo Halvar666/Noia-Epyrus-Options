@@ -1,0 +1,4 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+button:not(.mini-button):not([type="menu"]):not([type="menu-button"]):not(.details-button-link):not([anonid="details-btn"]) {
+  border-radius: 15px !important;
+}

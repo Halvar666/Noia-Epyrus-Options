@@ -1,0 +1,19 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Black scheme + classic square/rounded tabs. */
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack > .tab-content,
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack > .tab-content > .tab-text,
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack > .tab-content > .tab-label {
+  color: #343434 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-tab[selected="true"] > .tab-stack > .tab-content,
+#messengerWindow #tabs-toolbar .tabmail-tab[selected="true"] > .tab-stack > .tab-content > .tab-text,
+#messengerWindow #tabs-toolbar .tabmail-tab[selected="true"] > .tab-stack > .tab-content > .tab-label,
+#messengerWindow #tabs-toolbar .tabmail-tab:hover > .tab-stack > .tab-content,
+#messengerWindow #tabs-toolbar .tabmail-tab:hover > .tab-stack > .tab-content > .tab-text,
+#messengerWindow #tabs-toolbar .tabmail-tab:hover > .tab-stack > .tab-content > .tab-label {
+  color: #111 !important;
+}

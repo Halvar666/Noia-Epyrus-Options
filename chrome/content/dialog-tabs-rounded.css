@@ -1,0 +1,16 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Original Noia Fox tabbox end-cap treatment, widened for Epyrus XUL dialogs. */
+tabbox > tabs > tab:first-of-type:-moz-locale-dir(ltr),
+tabs > tab:first-of-type:-moz-locale-dir(ltr),
+tabbox > tabs > tab:last-of-type:-moz-locale-dir(rtl),
+tabs > tab:last-of-type:-moz-locale-dir(rtl) {
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
+tabbox > tabs > tab:last-of-type:-moz-locale-dir(ltr),
+tabs > tab:last-of-type:-moz-locale-dir(ltr),
+tabbox > tabs > tab:first-of-type:-moz-locale-dir(rtl),
+tabs > tab:first-of-type:-moz-locale-dir(rtl) {
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}

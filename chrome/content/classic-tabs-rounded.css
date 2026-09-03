@@ -1,0 +1,2 @@
+@import url("chrome://noiaepyrusoptions/content/classic-tabs-base.css");
+#messengerWindow #tabs-toolbar .tabmail-tab { border-radius: 15px !important; }

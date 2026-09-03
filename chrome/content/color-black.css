@@ -1,0 +1,518 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Curated Epyrus port of the Noia Fox 2.0.8 dark.css + tbdark.css pair.
+ * Browser-only rules and all titlebar/chromemargin/AppMenu geometry are
+ * intentionally omitted. */
+
+/* Main Epyrus chrome */
+#messengerWindow,
+#tabs-toolbar,
+#mail-toolbar-menubar2,
+#mail-bar3,
+.mail-toolbox,
+.contentTabToolbox,
+#quick-filter-bar-main-bar,
+#quick-filter-bar-tab-bar,
+#quick-filter-bar-filter-text-bar,
+#msgcomposeWindow,
+#composeToolbar2,
+#compose-toolbar-menubar2,
+#MsgHeadersToolbar,
+#FormatToolbox,
+#abContactsPanel,
+#addrbook-toolbar-menubar2,
+#ab-bar2,
+#ab-toolbox,
+#attachmentView,
+#calendar-toolbox,
+#task-toolbox,
+#chat-view-toolbox {
+  -moz-appearance: none !important;
+  background-color: #0F0F0F !important;
+  color: #e3e3e3 !important;
+}
+
+#mail-bar3,
+#composeToolbar2,
+#ab-bar2,
+#tabs-toolbar {
+  background-image: url("chrome://noiaepyrusoptions/skin/black-glossy.jpg") !important;
+  background-repeat: repeat-x !important;
+  background-position: top left !important;
+}
+
+#mail-toolbar-menubar2 menu,
+#compose-toolbar-menubar2 menu,
+#addrbook-toolbar-menubar2 menu,
+#mail-bar3 toolbarbutton,
+#composeToolbar2 toolbarbutton,
+#ab-bar2 toolbarbutton,
+#calendar-toolbox toolbarbutton,
+#task-toolbox toolbarbutton,
+#chat-view-toolbox toolbarbutton {
+  color: #e0e0e0 !important;
+  text-shadow: none !important;
+}
+
+menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
+  color: #00ffff !important;
+  background-image: url("chrome://noiaepyrusoptions/skin/dark-menu-hover.png") !important;
+  background-repeat: repeat-x !important;
+  background-size: auto 100% !important;
+  border-radius: 10px !important;
+}
+
+/* Main tab geometry/face styling is intentionally left to Noia Epyrus or
+ * the selected classic-tab modifier.  Black-mode tab text is handled by
+ * dedicated Australis/classic sheets so the curved default tab background
+ * cannot reveal a square outer-tab colour layer. */
+
+/* Windows/dialog surfaces, without touching the native window frame. */
+page,
+dialog,
+wizard,
+prefwindow {
+  background-image: url("chrome://noiaepyrusoptions/skin/black-glossy.jpg") !important;
+  background-color: #111 !important;
+  color: #e3e3e3 !important;
+}
+
+prefpane,
+.windowDialog,
+.windowDialog prefpane {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Menus and popups */
+menupopup,
+popup {
+  color: #e3e3e3 !important;
+  background-color: #515151 !important;
+  border-color: #696969 !important;
+}
+menupopup > menu,
+menupopup > menuitem,
+popup > menu,
+popup > menuitem {
+  color: #e3e3e3 !important;
+}
+menupopup > menu[_moz-menuactive="true"]:not([disabled="true"]),
+menupopup > menuitem[_moz-menuactive="true"]:not([disabled="true"]),
+popup > menu[_moz-menuactive="true"]:not([disabled="true"]),
+popup > menuitem[_moz-menuactive="true"]:not([disabled="true"]) {
+  color: #00ffff !important;
+  background-color: #515151 !important;
+  background-image: url("chrome://noiaepyrusoptions/skin/dark-menu-hover.png") !important;
+  background-repeat: repeat-x !important;
+  background-size: auto 100% !important;
+  border-radius: 10px !important;
+}
+menupopup > menu[disabled="true"],
+menupopup > menuitem[disabled="true"],
+popup > menu[disabled="true"],
+popup > menuitem[disabled="true"] {
+  color: #aaa !important;
+}
+
+/* Trees and lists: this is where the original Black scheme differed most
+ * from simply painting the top bars black. */
+tree,
+listbox,
+richlistbox {
+  color: #e3e3e3 !important;
+  background-color: #202020 !important;
+  background-image: linear-gradient(to bottom, #111 1%, #323232) !important;
+  border-color: #555 !important;
+}
+
+treechildren::-moz-tree-row {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+treechildren::-moz-tree-row(selected),
+treechildren::-moz-tree-row(hover),
+treechildren::-moz-tree-row(selected, focus) {
+  background: url("chrome://noiaepyrusoptions/skin/dark-row-active.png") repeat-x center center !important;
+}
+treechildren::-moz-tree-cell-text {
+  color: #e3e3e3 !important;
+}
+treechildren::-moz-tree-cell-text(selected),
+treechildren::-moz-tree-cell-text(hover),
+treechildren::-moz-tree-cell-text(selected, focus) {
+  color: #00ffff !important;
+}
+
+treecol,
+treecolpicker {
+  color: #fff !important;
+  border-color: #606060 !important;
+  background: url("chrome://noiaepyrusoptions/skin/dark-row-inactive.png") repeat-x #303030 !important;
+}
+
+/* Dialog controls */
+groupbox {
+  color: #fff !important;
+  background-image: linear-gradient(to bottom, #000 10%, #323232) !important;
+  border-color: #555 !important;
+}
+.groupbox-title {
+  color: #fff !important;
+  background-color: #111 !important;
+  border-color: #555 !important;
+}
+caption,
+checkbox,
+radio,
+radiogroup > label,
+groupbox > label,
+groupbox > hbox > label,
+groupbox > vbox > label {
+  color: #fff !important;
+}
+textbox,
+menulist {
+  color: #f0f0f0 !important;
+  background-color: #292929 !important;
+  border-color: #606060 !important;
+}
+textbox[disabled="true"],
+menulist[disabled="true"] {
+  color: #888 !important;
+}
+
+/* Header and status areas */
+#expandedHeaderView,
+#CompactHeader_collapsedHeaderView,
+#msgHeaderView,
+#status-bar,
+statusbar {
+  color: #e3e3e3 !important;
+  background: linear-gradient(to bottom, #333, #090909) !important;
+}
+
+@-moz-document url("about:addons") {
+  #addons-page, #view-port, #addon-list, #search-list, #updates-list {
+    color: #fff !important;
+    background: linear-gradient(to bottom, #111 1%, #323232) !important;
+  }
+  #categories { color: #fff !important; background: #202020 !important; }
+}
+
+/* Ordinary XUL tabboxes keep Noia's light button-like tab faces, therefore
+ * black text is the readable choice even when their surrounding dialog is
+ * dark.  Pane selector radios are dark-surface navigation and stay light. */
+tabbox tab,
+tabs > tab {
+  color: #000 !important;
+  text-shadow: none !important;
+}
+radio[pane] {
+  color: #d0d0d0 !important;
+  text-shadow: none !important;
+}
+
+/* Text-bearing controls on dark dialog/preference surfaces.  Keep this
+ * scoped to chrome UI containers so message/document content is untouched. */
+prefpane label,
+prefpane description,
+dialog > vbox label,
+dialog > vbox description,
+wizard > vbox label,
+wizard > vbox description,
+.windowDialog label,
+.windowDialog description {
+  color: #e3e3e3 !important;
+  text-shadow: none !important;
+}
+
+/* Lists/richlists can have their own foreground colour instead of inheriting
+ * from the dark listbox surface. */
+listitem,
+richlistitem {
+  color: #e3e3e3 !important;
+}
+listitem[selected="true"],
+richlistitem[selected="true"],
+listitem:hover,
+richlistitem:hover {
+  color: #00ffff !important;
+}
+
+/* Common header/category labels used by preference and add-on views. */
+.category-name,
+.addon-name,
+.name-container,
+.header-name,
+#categories .category-name {
+  color: inherit !important;
+  text-shadow: none !important;
+}
+
+/* Preferences pane selector */
+.paneSelector {
+  -moz-appearance: none !important;
+  background-color: #171717 !important;
+  background-image: linear-gradient(to bottom, #292929, #111) !important;
+  border-color: #555 !important;
+  color: #d8d8d8 !important;
+}
+
+.paneSelector radio[pane],
+.paneSelector radio[pane] > .paneButtonLabel,
+.paneSelector .paneButtonLabel {
+  color: #d8d8d8 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+.paneSelector radio[pane]:hover,
+.paneSelector radio[pane][selected],
+.paneSelector radio[pane][selected="true"],
+.paneSelector radio[pane]:hover > .paneButtonLabel,
+.paneSelector radio[pane][selected] > .paneButtonLabel,
+.paneSelector radio[pane][selected="true"] > .paneButtonLabel {
+  color: #111 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+/* Message header */
+#msgHeaderView .headerName,
+#expandedHeaderView .headerName,
+#CompactHeader_collapsedHeaderView .headerName {
+  color: #bfc5cc !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+#msgHeaderView .headerValue,
+#expandedHeaderView .headerValue,
+#CompactHeader_collapsedHeaderView .headerValue,
+#msgHeaderView .headerField,
+#expandedHeaderView .headerField,
+#CompactHeader_collapsedHeaderView .headerField {
+  color: #e7e7e7 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+#msgHeaderView .headerValueUrl,
+#expandedHeaderView .headerValueUrl,
+#CompactHeader_collapsedHeaderView .headerValueUrl,
+#msgHeaderView .emaillabel,
+#expandedHeaderView .emaillabel,
+#CompactHeader_collapsedHeaderView .emaillabel {
+  color: #00dfe8 !important;
+}
+
+/* Add-ons Manager rows and categories */
+@-moz-document url("about:addons") {
+  .addon:not([selected]),
+  .addon:not([selected]) .name-container,
+  .addon:not([selected]) .description,
+  .addon:not([selected]) .creator {
+    color: #e3e3e3 !important;
+  }
+
+  .addon[selected],
+  .addon[selected] .name-container,
+  .addon[selected] .description,
+  .addon[selected] .creator,
+  .addon[selected] label,
+  .addon[selected] description {
+    color: #171717 !important;
+    text-shadow: none !important;
+  }
+
+  .addon[selected] .text-link {
+    color: #0645ad !important;
+    text-shadow: none !important;
+  }
+
+  .addon[selected] .text-link:hover {
+    color: #a40000 !important;
+  }
+
+  #categories > .category[selected] .category-name,
+  #categories > .category:hover .category-name {
+    color: #111 !important;
+    text-shadow: none !important;
+  }
+
+  #categories > .category:not([selected]):not(:hover) .category-name {
+    color: #e8e8e8 !important;
+    text-shadow: none !important;
+  }
+}
+
+/* Disabled entries in the native light AppMenu */
+#appmenuPrimaryPane [disabled="true"],
+#appmenuSecondaryPane [disabled="true"],
+#appmenuPrimaryPane menu[disabled="true"],
+#appmenuPrimaryPane menuitem[disabled="true"],
+#appmenuSecondaryPane menu[disabled="true"],
+#appmenuSecondaryPane menuitem[disabled="true"] {
+  color: #686868 !important;
+  opacity: .72 !important;
+  text-shadow: none !important;
+}
+
+/* Light Noia dialog tabs */
+tabbox tab .tab-text,
+tabbox tab > .tab-middle > .tab-text,
+tabs > tab .tab-text,
+tabs > tab > .tab-middle > .tab-text {
+  color: #171717 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+tabbox tab[selected="true"] .tab-text,
+tabbox tab[visuallyselected="true"] .tab-text,
+tabbox tab:hover .tab-text,
+tabs > tab[selected="true"] .tab-text,
+tabs > tab[visuallyselected="true"] .tab-text,
+tabs > tab:hover .tab-text {
+  color: #111 !important;
+}
+
+/* Ordinary XUL push buttons use a light Noia face.  Set the foreground on
+ * both the button and its binding content so preference/dialog labels cannot
+ * override it. */
+button,
+button > .button-box,
+button > .button-box > .box-inherit,
+button .button-text,
+button label,
+prefpane button,
+prefpane button .button-text,
+prefpane button label,
+dialog button,
+dialog button .button-text,
+dialog button label,
+.windowDialog button,
+.windowDialog button .button-text,
+.windowDialog button label {
+  color: #111 !important;
+  text-shadow: none !important;
+}
+
+button[disabled="true"],
+button[disabled="true"] > .button-box,
+button[disabled="true"] > .button-box > .box-inherit,
+button:disabled,
+button:disabled > .button-box,
+button:disabled > .button-box > .box-inherit {
+  color: #666 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+button[disabled="true"] .button-text,
+button:disabled .button-text,
+prefpane button[disabled="true"],
+prefpane button[disabled="true"] label,
+dialog button[disabled="true"],
+dialog button[disabled="true"] label,
+.windowDialog button[disabled="true"],
+.windowDialog button[disabled="true"] label {
+  color: #5f5f5f !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+/* Add-ons Manager header */
+@-moz-document url("about:addons") {
+  #header {
+    background: linear-gradient(to bottom, #202020, #050505) !important;
+    border-bottom-color: #555 !important;
+    color: #e3e3e3 !important;
+  }
+
+  .view-header {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    border-bottom-color: #555 !important;
+    color: #e3e3e3 !important;
+  }
+}
+
+/* “More” is a XUL button presented as a link.  Keep the complete binding
+ * transparent and link-coloured, and use a dark link on the light selected
+ * add-on row. */
+@-moz-document url("about:addons") {
+  button.details-button-link,
+  button[anonid="details-btn"],
+  .details-button-link,
+  button.details-button-link > .button-box,
+  button[anonid="details-btn"] > .button-box,
+  .details-button-link > .button-box,
+  button.details-button-link > .button-box > .box-inherit,
+  button[anonid="details-btn"] > .button-box > .box-inherit,
+  .details-button-link > .button-box > .box-inherit,
+  button.details-button-link .button-text,
+  button[anonid="details-btn"] .button-text,
+  .details-button-link .button-text,
+  button.details-button-link label,
+  button[anonid="details-btn"] label,
+  .details-button-link label {
+    color: #00bfe8 !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+  }
+
+  button.details-button-link,
+  button[anonid="details-btn"],
+  .details-button-link {
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  button.details-button-link:hover,
+  button[anonid="details-btn"]:hover,
+  .details-button-link:hover,
+  button.details-button-link:hover > .button-box,
+  button[anonid="details-btn"]:hover > .button-box,
+  .details-button-link:hover > .button-box,
+  button.details-button-link:hover .button-text,
+  button[anonid="details-btn"]:hover .button-text,
+  .details-button-link:hover .button-text,
+  button.details-button-link:hover label,
+  button[anonid="details-btn"]:hover label,
+  .details-button-link:hover label {
+    color: #5eeaff !important;
+    background: transparent !important;
+  }
+
+  .addon[selected] button.details-button-link,
+  .addon[selected] button[anonid="details-btn"],
+  .addon[selected] .details-button-link,
+  .addon[selected] button.details-button-link > .button-box,
+  .addon[selected] button[anonid="details-btn"] > .button-box,
+  .addon[selected] .details-button-link > .button-box,
+  .addon[selected] button.details-button-link .button-text,
+  .addon[selected] button[anonid="details-btn"] .button-text,
+  .addon[selected] .details-button-link .button-text,
+  .addon[selected] button.details-button-link label,
+  .addon[selected] button[anonid="details-btn"] label,
+  .addon[selected] .details-button-link label {
+    color: #0645ad !important;
+  }
+
+  .addon[selected] button.details-button-link:hover,
+  .addon[selected] button[anonid="details-btn"]:hover,
+  .addon[selected] .details-button-link:hover,
+  .addon[selected] button.details-button-link:hover > .button-box,
+  .addon[selected] button[anonid="details-btn"]:hover > .button-box,
+  .addon[selected] .details-button-link:hover > .button-box,
+  .addon[selected] button.details-button-link:hover .button-text,
+  .addon[selected] button[anonid="details-btn"]:hover .button-text,
+  .addon[selected] .details-button-link:hover .button-text {
+    color: #a40000 !important;
+  }
+}

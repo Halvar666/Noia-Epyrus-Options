@@ -1,0 +1,9 @@
+pref("extensions.noiaepyrusoptions.colorScheme", "grey");
+pref("extensions.noiaepyrusoptions.tabStyle", "australis");
+pref("extensions.noiaepyrusoptions.dialogTabStyle", "standard");
+pref("extensions.noiaepyrusoptions.roundedButtons", false);
+pref("extensions.noiaepyrusoptions.blueCloseButtons", false);
+pref("extensions.noiaepyrusoptions.stripedRows", false);
+pref("extensions.noiaepyrusoptions.noToolbarBorders", false);
+pref("extensions.noiaepyrusoptions.toolbarHoverBackground", false);
+pref("extensions.noiaepyrusoptions.plainToolbars", false);

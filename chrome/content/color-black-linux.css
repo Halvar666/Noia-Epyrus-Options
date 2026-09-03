@@ -1,0 +1,29 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Linux GTK3: the classic Preferences pane selector keeps Noia's light
+ * platform face.  Inactive pane labels therefore need a dark foreground.
+ * Selected/hovered labels are already handled by color-black.css. */
+prefwindow .paneSelector radio[pane]:not([selected="true"]):not([selected]):not(:hover),
+prefwindow .paneSelector radio[pane]:not([selected="true"]):not([selected]):not(:hover) > .paneButtonLabel,
+#BrowserPreferences .paneSelector radio[pane]:not([selected="true"]):not([selected]):not(:hover),
+#BrowserPreferences .paneSelector radio[pane]:not([selected="true"]):not([selected]):not(:hover) > .paneButtonLabel {
+  color: #555 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+/* Linux application-menu button on the tab bar. */
+#appmenu-toolbar-button,
+#appmenu-toolbar-button > .toolbarbutton-text,
+#appmenu-toolbar-button .toolbarbutton-text,
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker,
+#appmenu-toolbar-button .toolbarbutton-menu-dropmarker {
+  color: #f2f2f2 !important;
+  text-shadow: 0 1px 1px #000 !important;
+  opacity: 1 !important;
+}
+
+#appmenu-toolbar-button:hover,
+#appmenu-toolbar-button[open="true"] {
+  color: #fff !important;
+}

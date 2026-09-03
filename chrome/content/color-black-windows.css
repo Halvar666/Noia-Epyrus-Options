@@ -1,0 +1,30 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Windows: colour only the native drag surface left around tabs when tabs
+ * are in the title bar.  Do not alter bindings, margins, caption buttons or
+ * frame geometry. */
+#messengerWindow[tabsintitlebar] #titlebar-content {
+  background-color: #0f0f0f !important;
+  background-image: linear-gradient(to bottom, #202020, #090909) !important;
+  color: #e3e3e3 !important;
+}
+
+/* Use Epyrus' inverted caption glyphs on the dark titlebar surface. */
+#titlebar-min,
+#minimize-button {
+  list-style-image: url("chrome://messenger/skin/icons/caption-buttons.svg#minimize-outline-inverted") !important;
+}
+
+#titlebar-max {
+  list-style-image: url("chrome://messenger/skin/icons/caption-buttons.svg#maximize-outline-inverted") !important;
+}
+
+#messengerWindow[sizemode="maximized"] #titlebar-max,
+#restore-button {
+  list-style-image: url("chrome://messenger/skin/icons/caption-buttons.svg#restore-outline-inverted") !important;
+}
+
+#titlebar-close,
+#close-button {
+  list-style-image: url("chrome://messenger/skin/icons/caption-buttons.svg#close-outline-inverted") !important;
+}

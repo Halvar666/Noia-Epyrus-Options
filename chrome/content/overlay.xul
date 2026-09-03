@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://noiaepyrusoptions/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://noiaepyrusoptions/locale/options.dtd">
+<overlay id="noiaepyrusoptions-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/javascript" src="chrome://noiaepyrusoptions/content/runtime.js"/>
+  <script type="application/javascript" src="chrome://noiaepyrusoptions/content/overlay.js"/>
+  <toolbarpalette id="MailToolbarPalette">
+    <toolbarbutton id="noiaepyrus-options-toolbar-button"
+                   class="toolbarbutton-1"
+                   label="&toolbarButton.label;"
+                   tooltiptext="&toolbarButton.tooltip;"
+                   oncommand="window.openDialog('chrome://noiaepyrusoptions/content/options.xul', 'noiaepyrus-options', 'chrome,centerscreen,resizable');"/>
+  </toolbarpalette>
+</overlay>

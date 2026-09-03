@@ -1,0 +1,62 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Classic pre-Australis Noia tab treatment adapted to Epyrus tabmail.
+ *
+ * Selectors are intentionally anchored to the Epyrus mail tabbar and
+ * given higher specificity than optional colour-scheme sheets.  This keeps
+ * tab geometry independent from Grey/Blue/Black colour selection.
+ * Titlebar/AppMenu geometry is deliberately untouched. */
+#messengerWindow #tabs-toolbar .tabmail-tab {
+  -moz-appearance: none !important;
+  margin: 5px 1px 2px !important;
+  padding: 0 6px !important;
+  border: 1px solid #969797 !important;
+  background-image: url("chrome://browser/skin/icons/solid.png") !important;
+  background-repeat: repeat-x !important;
+  box-shadow: 0 0 2px rgba(255,255,255,.4) inset,
+              0 4px 6px rgba(255,255,255,.4) inset,
+              0 11px 0 -2px rgba(255,255,255,.2) inset,
+              0 13px 8px rgba(150,150,150,.3) inset,
+              1px 2px 4px rgba(0,0,0,.3) !important;
+  min-height: 22px !important;
+  height: 22px !important;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-tab[selected="true"],
+#messengerWindow #tabs-toolbar .tabmail-tab:hover {
+  border-color: #4379bd !important;
+  background-image: url("chrome://browser/skin/icons/Bookmark-background.png") !important;
+  background-repeat: repeat-x !important;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack {
+  height: 22px !important;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack > .tab-background {
+  -moz-margin-start: 0 !important;
+  -moz-margin-end: 0 !important;
+  background: none !important;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack > .tab-background > .tab-background-start,
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack > .tab-background > .tab-background-middle,
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack > .tab-background > .tab-background-end {
+  background: none !important;
+  clip-path: none !important;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack > .tab-background > .tab-background-start,
+#messengerWindow #tabs-toolbar .tabmail-tab > .tab-stack > .tab-background > .tab-background-end {
+  width: 0 !important;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-arrowscrollbox > scrollbox {
+  -moz-padding-start: 4px !important;
+  -moz-padding-end: 4px !important;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-tab:not([selected]):not(:hover) +
+#messengerWindow #tabs-toolbar .tabmail-tab:not([selected]):not(:hover)::before {
+  display: none !important;
+}

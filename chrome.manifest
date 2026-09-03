@@ -1,0 +1,6 @@
+content noiaepyrusoptions chrome/content/
+skin noiaepyrusoptions classic/1.0 chrome/skin/
+locale noiaepyrusoptions en-US chrome/locale/en-US/
+
+overlay chrome://messenger/content/mailWindowOverlay.xul chrome://noiaepyrusoptions/content/overlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://noiaepyrusoptions/skin/overlay.css

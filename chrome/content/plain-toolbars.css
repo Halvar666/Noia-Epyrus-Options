@@ -1,0 +1,25 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Original Noia Fox "No effect for toolbars", adapted without lwtheme guards. */
+#navigation-toolbox,
+#tabs-toolbar,
+#mail-toolbar-menubar2,
+#mail-bar3,
+.mail-toolbox,
+.contentTabToolbox,
+#quick-filter-bar-main-bar,
+#quick-filter-bar-tab-bar,
+#quick-filter-bar-filter-text-bar,
+#msgcomposeWindow,
+#composeToolbar2,
+#compose-toolbar-menubar2,
+#MsgHeadersToolbar,
+#FormatToolbox,
+#abContactsPanel,
+#addrbook-toolbar-menubar2,
+#ab-bar2,
+#ab-toolbox,
+#calendar-toolbox,
+#task-toolbox,
+#chat-view-toolbox {
+  background-image: none !important;
+}

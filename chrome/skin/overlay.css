@@ -1,0 +1,6 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#noiaepyrus-options-toolbar-button {
+  list-style-image: url("noiaepyrus-options-18.png");
+  -moz-image-region: rect(0px 18px 18px 0px);
+}

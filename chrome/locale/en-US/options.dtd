@@ -1,0 +1,29 @@
+<!ENTITY window.title "Noia Epyrus Options">
+<!ENTITY close.label "Close">
+<!ENTITY toolbarButton.label "Noia Epyrus Options">
+<!ENTITY toolbarButton.tooltip "Open Noia Epyrus visual options">
+<!ENTITY colors.caption "Color scheme">
+<!ENTITY colors.grey "Grey (Noia Epyrus default)">
+<!ENTITY colors.blue "Blue">
+<!ENTITY colors.black "Black (experimental)">
+<!ENTITY tabs.caption "Tabs">
+<!ENTITY mailTabs.label "Main mail tabs">
+<!ENTITY tabs.australis "Noia Epyrus curved tabs">
+<!ENTITY tabs.square "Classic square tabs">
+<!ENTITY tabs.rounded "Classic rounded tabs">
+<!ENTITY dialogTabs.label "Dialog tabs">
+<!ENTITY dialogTabs.standard "Standard">
+<!ENTITY dialogTabs.square "Square">
+<!ENTITY dialogTabs.rounded "Rounded">
+<!ENTITY controls.caption "Buttons and close controls">
+<!ENTITY roundedButtons.label "Rounded dialog buttons">
+<!ENTITY blueCloseButtons.label "Blue close buttons">
+<!ENTITY mailList.caption "Message list">
+<!ENTITY stripedRows.label "Classic Noia striped message rows">
+<!ENTITY stripedRows.tooltip "Use the original Noia row.png treatment on odd rows of the message list.">
+<!ENTITY toolbars.caption "Toolbars">
+<!ENTITY noToolbarBorders.label "Remove primary toolbar borders">
+<!ENTITY toolbarHoverBackground.label "Toolbar buttons display a background when hovering">
+<!ENTITY plainToolbars.label "No gradient/effect on toolbars">
+<!ENTITY reset.label "Restore Noia Epyrus defaults">
+<!ENTITY credits "Based on Noia Fox Options 2.x/3.x by David Vincent. Epyrus adaptation by Halvar666.">

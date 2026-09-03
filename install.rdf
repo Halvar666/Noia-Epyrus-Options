@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>noiaepyrus-options@halvar666</em:id>
+    <em:type>2</em:type>
+    <em:name>Noia Epyrus Options</em:name>
+    <em:version>1.0.0a17</em:version>
+    <em:creator>Halvar666</em:creator>
+    <em:contributor>Based on Noia Fox Options by David Vincent</em:contributor>
+    <em:description>Optional classic Noia visual settings for the Noia Epyrus theme.</em:description>
+    <em:homepageURL>https://github.com/Halvar666/Noia-Epyrus-Options</em:homepageURL>
+    <em:optionsURL>chrome://noiaepyrusoptions/content/options.xul</em:optionsURL>
+    <em:iconURL>chrome://noiaepyrusoptions/skin/icon.png</em:iconURL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{29877c1d-27df-4421-9a79-382c31470151}</em:id>
+        <em:minVersion>2.2.1</em:minVersion>
+        <em:maxVersion>2.2.1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
