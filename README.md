@@ -6,7 +6,7 @@ The add-on is derived from **Noia Fox Options** by David Vincent and adapts sele
 
 ## Status
 
-Current development build: **1.0.0a17**
+Current release candidate: **1.0.0rc1**
 
 Tested with:
 
